@@ -18,16 +18,16 @@ function addItem() {
 
 function showList() {
  OUTPUT.innerHTML += "<br>These are the items on your shopping list:<br>";
-     OUTPUT.innerHTML +="<br> $8</br>"
-     OUTPUT.innerHTML +=""
-     OUTPUT.innerHTML +=""
-     OUTPUT.innerHTML +=""
-    OUTPUT.innerHTML += "<br> $5</br>"
-    OUTPUT.innerHTML +="<br>$4</br>"
-    OUTPUT.innerHTML +="<br> $4</br>"
-    OUTPUT.innerHTML +="<br> $4</br>"
-    OUTPUT.innerHTML +="<br> $3</br>"
-    OUTPUT.innerHTML +="<br> $4</br>"
+     OUTPUT.innerHTML +="<br>Sapasui $10</br>"
+     OUTPUT.innerHTML +="PaniPopo $8"
+     OUTPUT.innerHTML +="Palusami $12"
+     OUTPUT.innerHTML +="Ota Ika $10"
+    OUTPUT.innerHTML += "<br>Otai $8</br>"
+    OUTPUT.innerHTML +="<br>Coconut Water $10</br>"
+    OUTPUT.innerHTML +="<br>Chocolate MilkShake $6</br>"
+    OUTPUT.innerHTML +="<br>Strawberry MilkShake $6</br>"
+    OUTPUT.innerHTML +="<br>Water $5</br>"
+  
     
 
 
