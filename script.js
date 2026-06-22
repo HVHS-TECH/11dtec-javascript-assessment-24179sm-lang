@@ -19,9 +19,9 @@ function addItem() {
 function showList() {
  OUTPUT.innerHTML += "<br>These are the items on your shopping list:<br>";
      OUTPUT.innerHTML +="<br>Sapasui $10</br>"
-     OUTPUT.innerHTML +="PaniPopo $8"
-     OUTPUT.innerHTML +="Palusami $12"
-     OUTPUT.innerHTML +="Ota Ika $10"
+     OUTPUT.innerHTML +="<br>PaniPopo $8</br>"
+     OUTPUT.innerHTML +="<br>Palusami $12</br>"
+     OUTPUT.innerHTML +="<br>Ota Ika $10</br>"
     OUTPUT.innerHTML += "<br>Otai $8</br>"
     OUTPUT.innerHTML +="<br>Coconut Water $10</br>"
     OUTPUT.innerHTML +="<br>Chocolate MilkShake $6</br>"
