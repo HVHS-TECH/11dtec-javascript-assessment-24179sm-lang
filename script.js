@@ -29,14 +29,7 @@ OUTPUT.innerHTML +="<br>Strawberry MilkShake $6</br>"
 OUTPUT.innerHTML +="<br>Water $5</br>"
 OUTPUT.innerHTML +="<br>Hot chocolate $10</br>"
 OUTPUT.innerHTML +="<br>Monster $8</br>"
-OUTPUT.innerHTML +="<br>Ghost</br>"
-OUTPUT.innerHTML +="<br></br>"
-OUTPUT.innerHTML +="<br></br>"
-OUTPUT.innerHTML +="<br></br>"
-OUTPUT.innerHTML +="<br></br>"
-OUTPUT.innerHTML +="<br></br>"
-OUTPUT.innerHTML +="<br></br>"
-OUTPUT.innerHTML +="<br></br>"
+
 
 
 
