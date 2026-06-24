@@ -1,68 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Tongan goods</title>
-</head>
-<body>
-
-<h1>Food Section</h1>
-<p>Sapasui</p> <button onCLICK="start()"></button>
-<p>PaniPopo</p> <button onCLICK="start()"></button>
-<p>Palusami</p> <button onCLICK="start()"></button>
-<p>Ota Ika</p> <button onCLICK="start()"></button>
-
-<h1>Section full of drinks</h1>
-<p>Otai</p> <button onCLICK="start()"></button>
-<p>Coconut Water</p> <button onCLICK="start()"></button>
-<p>Chocolate MilkShake</p> <button onCLICK="start()"></button>
-<p>Strawberry MilkShake</p> <button onCLICK="start()"></button>
-<p>Monster</p> <button onClick="start()"></button>
-
-
-
-
-
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>T16-arrays continued</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="script.js">
-  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tongan Goods</title>
 </head>
-
 <body onload="start()">
 
+    <h1>Food Section</h1>
 
+    <p>Sapasui - $10 <button onclick="addSpecificItem('Sapasui')">Add to Cart</button></p>
 
-  <input id="itemInput" type="text" placeholder="Enter an item">
+    <p>Pani Popo - $8 <button onclick="addSpecificItem('Pani Popo')">Add to Cart</button></p>
 
-  <button onclick="addItem()">Add Item</button>
+    <p>Palusami - $12 <button onclick="addSpecificItem('Palusami')">Add to Cart</button></p>
 
-  <button onclick="showList()">Show Shopping List</button>
+    <p>Ota Ika - $10 <button onclick="addSpecificItem('Ota Ika')">Add to Cart</button></p>
 
-  <br><br>
+    <h1>Drinks Section</h1>
 
-  <div id="spaceForJavaScriptOutput">
-    The output of your script will go here.
-  </div>
+    <p>Otai - $17 <button onclick="addSpecificItem('Otai')">Add to Cart</button></p>
 
-  <script src="script.js"></script>
+    <p>Coconut Water - $10 <button onclick="addSpecificItem('Coconut Water')">Add to Cart</button></p>
+
+    <p>Chocolate Milkshake - $6 <button onclick="addSpecificItem('Chocolate Milkshake')">Add to Cart</button></p>
+
+    <p>Strawberry Milkshake - $6 <button onclick="addSpecificItem('Strawberry Milkshake')">Add to Cart</button></p>
+
+    <p>Monster - $8 <button onclick="addSpecificItem('Monster')">Add to Cart</button></p>
+
+    <hr>
+
+    <h2>Add Your Own Item</h2>
+
+    <input id="itemInput" type="text" placeholder="Enter an item">
+
+    <button onclick="addItem()">Add Item</button>
+
+    <button onclick="showList()">Show Shopping List</button>
+
+    <button onclick="clearList()">Clear List</button>
+
+    <br><br>
+
+    <div id="spaceForJavaScriptOutput"></div>
+
+    <script src="script.js"></script>
 
 </body>
-
 </html>
-
-
-
-
-
-
-<script src="script.js"></script>
-</body>
-</html>
-
-

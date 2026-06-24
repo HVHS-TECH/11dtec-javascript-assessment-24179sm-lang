@@ -1,4 +1,5 @@
-console.log("Hello world!")
+console.log("Hello World!");
+
 let OUTPUT;
 let shoppingList = [];
 
@@ -6,46 +7,49 @@ let shoppingList = [];
 Functions
 **********************/
 
-function addItem() {
+function start() {
+    OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    OUTPUT.innerHTML = "Welcome to the Tongan Goods Shop!<br><br>";
+}
 
+function addItem() {
     let item = document.getElementById("itemInput").value;
+
+    if (item === "") {
+        OUTPUT.innerHTML += "Please enter an item.<br>";
+        return;
+    }
 
     shoppingList.push(item);
 
-    OUTPUT.innerHTML += "You have added " + item + " to the list <br>";
+    OUTPUT.innerHTML += item + " has been added to the cart.<br>";
 
+    document.getElementById("itemInput").value = "";
+}
+
+function addSpecificItem(item) {
+    shoppingList.push(item);
+
+    OUTPUT.innerHTML += item + " has been added to the cart.<br>";
 }
 
 function showList() {
-OUTPUT.innerHTML += "<br>These are the items on your shopping list:<br>";
-OUTPUT.innerHTML +="<br>Sapasui $10</br>"
-OUTPUT.innerHTML +="<br>PaniPopo $8</br>"
-OUTPUT.innerHTML +="<br>Palusami $12</br>"
-OUTPUT.innerHTML +="<br>Ota Ika $10</br>"
-OUTPUT.innerHTML += "<br>Otai $17</br>"
-OUTPUT.innerHTML +="<br>Coconut Water $10</br>"
-OUTPUT.innerHTML +="<br>Chocolate MilkShake $6</br>"
-OUTPUT.innerHTML +="<br>Strawberry MilkShake $6</br>"
-OUTPUT.innerHTML +="<br>Water $5</br>"
-OUTPUT.innerHTML +="<br>Hot chocolate $10</br>"
-OUTPUT.innerHTML +="<br>Monster $8</br>"
+    OUTPUT.innerHTML += "<hr>";
+    OUTPUT.innerHTML += "<h3>Your Shopping List:</h3>";
 
-
-
-
-    for (let i = 0; i < shoppingList.length; i++) {
-
-        OUTPUT.innerHTML += shoppingList[i] + "<br>";
-
+    if (shoppingList.length === 0) {
+        OUTPUT.innerHTML += "Your cart is empty.<br>";
+        return;
     }
 
+    for (let i = 0; i < shoppingList.length; i++) {
+        OUTPUT.innerHTML += (i + 1) + ". " + shoppingList[i] + "<br>";
+    }
+
+    OUTPUT.innerHTML += "<hr>";
 }
 
-function start() {
-
-    OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    OUTPUT.innerHTML = "";
-
+function clearList() {
+    shoppingList = [];
+    OUTPUT.innerHTML += "Shopping list cleared.<br>";
 }
-
