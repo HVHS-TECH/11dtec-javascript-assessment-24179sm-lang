@@ -58,7 +58,7 @@ function pay() {
 
 function start() {
     OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    OUTPUT.innerHTML = "Welcome to Daily Grid Cafe!";
+    OUTPUT.innerHTML = "Welcome to Tongan Goods!";
 }
 
 
