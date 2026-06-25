@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Tongan goods</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tongan Goods</title>
+
+    <style>
+        body {
+            background-color: rgb(86, 187, 255);
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body onload="start()">
 
-    <h1>Food Section</h1>
+    <h1>Welcome To Tongan Goods!</h1>
 
-    <p>Sapasui - $10 <button onclick="addSpecificItem('Sapasui')">Add to Cart</button></p>
+    <h2>Food Section</h2>
 
-    <p>Pani Popo - $8 <button onclick="addSpecificItem('Pani Popo')">Add to Cart</button></p>
+    <p> - $8</p>
+    <button onclick="addItem('')">Add</button>
 
-    <p>Palusami - $12 <button onclick="addSpecificItem('Palusami')">Add to Cart</button></p>
+    <p> - $5</p>
+    <button onclick="addItem('')">Add</button>
 
-    <p>Ota Ika - $10 <button onclick="addSpecificItem('Ota Ika')">Add to Cart</button></p>
+    <p> - $5</p>
+    <button onclick="addItem('')">Add</button>
 
-    <h1>Drinks Section</h1>
+    <p> - $8</p>
+    <button onclick="addItem('')">Add</button>
 
-    <p>Otai - $17 <button onclick="addSpecificItem('Otai')">Add to Cart</button></p>
+    <p>Chocolate Cookie - $5</p>
+    <button onclick="addItem('e')">Add</button>
 
-    <p>Coconut Water - $10 <button onclick="addSpecificItem('Coconut Water')">Add to Cart</button></p>
+    <h2>Drinks Section</h2>
 
-    <p>Chocolate Milkshake - $6 <button onclick="addSpecificItem('Chocolate Milkshake')">Add to Cart</button></p>
+    <p> - $4</p>
+    <button onclick="addItem('Cappuccino')">Add</button>
 
-    <p>Strawberry Milkshake - $6 <button onclick="addSpecificItem('Strawberry Milkshake')">Add to Cart</button></p>
+    <p> - $4</p>
+    <button onclick="addItem('')">Add</button>
 
-    <p>Monster - $8 <button onclick="addSpecificItem('Monster')">Add to Cart</button></p>
+    <p> - $4</p>
+    <button onclick="addItem('')">Add</button>
 
-    <hr>
+    <p> - $3</p>
+    <button onclick="addItem('Water')">Add</button>
 
-    <h2>Add Your Own Item</h2>
+    <p> - $4</p>
+    <button onclick="addItem('')">Add</button>
 
-    <input id="itemInput" type="text" placeholder="Enter an item">
-
-    <button onclick="addItem()">Add Item</button>
-
-    <button onclick="showList()">Show Shopping List</button>
-
-    <button onclick="clearList()">Clear List</button>
+    <p>Strawberry Milkshake - $5</p>
+    <button onclick="addItem('Strawberry Milkshake')">Add</button>
 
     <br><br>
 
-    <div id="spaceForJavaScriptOutput"></div>
+    <button onclick="showList()">Show Order</button>
+    <button onclick="clearOrder()">Clear Order</button>
+    <button onclick="pay()">Pay</button>
+
+    <br><br>
+
+    <div id="spaceForJavaScriptOutput">
+        Your order will appear here.
+    </div>
 
     <script src="script.js"></script>
-
-
-<style>
-body {
-  background-color: rgba(0, 140, 255, 0.445);
-}
-</style>
-
-
-
 
 </body>
 </html>
