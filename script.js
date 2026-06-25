@@ -1,5 +1,5 @@
 
-console.log("Hello Welcome To My Daily Grid Cafe!");
+console.log("Hello Welcome To Tongan Goods!");
 
 let OUTPUT;
 let shoppingList = [];
@@ -46,7 +46,7 @@ function pay() {
         OUTPUT.innerHTML +=
             "<br><br>Payment accepted!<br>" +
             "Your change is $" + change +
-            "<br>Thank you for visiting Daily Grid Cafe!";
+            "<br>Thank you for visiting Tongan Goods!";
     } else {
         let needed = total - money;
 
