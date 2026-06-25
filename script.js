@@ -59,6 +59,7 @@ function pay() {
 function start() {
     OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     OUTPUT.innerHTML = "Welcome to Tongan Goods!";
+alert("Malo e lelei")
 }
 
 
