@@ -8,9 +8,9 @@
 
 var userName = prompt("what is your name?", "")
 
+prompt("Welcome to my program!\nplease enter your name")
 
-
-
+prompt("Welcome to my program "+ username + "!\nplease enter your name)
 
 
 
