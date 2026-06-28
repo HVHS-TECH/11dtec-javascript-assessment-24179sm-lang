@@ -1,9 +1,12 @@
 
+/**************************************
+ MAIN CODE
+ **************************************/
+
+    alert("Welcome ??????? to my first Javascript program!")
 
 
-
-
-
+var userName = prompt("what is your name?", "")
 
 
 
