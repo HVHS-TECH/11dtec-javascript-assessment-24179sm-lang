@@ -6,7 +6,7 @@
     alert("Welcome ??????? to my first Javascript program!")
 
 
-var userName = prompt("?", "")
+var userName = prompt("WHat would you like?", "")
 
 prompt("Welcome to Tongan Goods " + userName + "and what do you wanna buy")
 
