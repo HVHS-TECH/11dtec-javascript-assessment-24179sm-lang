@@ -8,7 +8,7 @@
 
 var userName = prompt("what is your name?", "")
 
-prompt("Welcome to my program " + userName + "\nPlease enter your name")
+prompt("Welcome to Tongan Goods " + userName + "\nPlease enter your name")
 
 
 
