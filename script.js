@@ -8,7 +8,7 @@
 
 var userName = prompt("put your stuff in here?", "")
 
-prompt("Welcome to Tongan Goods " + userName + "Buy it now")
+prompt("Welcome to Tongan Goods " + userName + " Buy it now ")
 
 
 
