@@ -3,12 +3,12 @@
  MAIN CODE
  **************************************/
 
-    alert("Welcome ??????? to my first Javascript program!")
+    alert("Welcome Unknown to my program!")
 
 
-var userName = prompt("WHat would you like?", "")
+var userName = prompt("put your stuff in here?", "")
 
-prompt("Welcome to Tongan Goods " + userName + "and what do you wanna buy")
+prompt("Welcome to Tongan Goods " + userName + "Buy it now")
 
 
 
