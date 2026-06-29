@@ -6,9 +6,9 @@
     alert("Welcome Unknown to my program!")
 
 
-var userName = prompt("put your stuff in here?", "")
+var userName = prompt("Pick your things here", "")
 
-prompt("Welcome to Tongan Goods " + userName + " Buy it now ")
+prompt("Welcome to Tongan Goods " + userName + " Buy it now! ")
 
 
 
