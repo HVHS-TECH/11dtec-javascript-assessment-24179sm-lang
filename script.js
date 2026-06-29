@@ -24,34 +24,6 @@ function displayMenu() {
 }
 
 
-/**************************************
- MAIN CODE
-**************************************/
-
-alert("Welcome Unknown to my program!");
-
-var userName = prompt("What is your name?");
-
-displayMenu();
-
-/**************************************
- FUNCTIONS
-**************************************/
-
-function displayMenu() {
-
-    var pick = prompt(
-        "Hello " + userName + "!\n\n" +
-        "What would you like today?\n" +
-        "1. Sapasui\n" +
-        "2. Pani Popo\n" +
-        "3. Palusami\n" +
-        "4. Ota Ika"
-    );
-
-    alert("You picked option " + pick + ".");
-}
-
 
 
 
