@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tongan Goods</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tongan Goods</title>
 
-    <style>
-        body {
-            background-color: rgba(0, 140, 255, 0.445);
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
+<style>
+body{
+    background-color: rgba(0,140,255,0.445);
+    font-family: Arial, sans-serif;
+}
 
-        button {
-            margin-left: 10px;
-        }
+button{
+    margin-left:10px;
+}
 
-        #spaceForJavaScriptOutput {
-            margin-top: 20px;
-            padding: 15px;
-            border: 2px solid black;
-            background-color: white;
-            min-height: 100px;
-        }
-    </style>
+#spaceForJavaScriptOutput{
+    margin-top:20px;
+    padding:15px;
+    border:2px solid black;
+    background:white;
+    width:350px;
+}
+</style>
+
 </head>
 
 <body onload="start()">
 
-    <h1>Food Section</h1>
+<h1>Food Section</h1>
 
-    <p>Sapasui - $10 <button onclick="addItem('Sapasui')">Add to Cart</button></p>
-    <p>Pani Popo - $8 <button onclick="addItem('Pani Popo')">Add to Cart</button></p>
-    <p>Palusami - $12 <button onclick="addItem('Palusami')">Add to Cart</button></p>
-    <p>Ota Ika - $10 <button onclick="addItem('Ota Ika')">Add to Cart</button></p>
+<p>Sapasui - $10 <button onclick="addItem('Sapasui')">Add to Cart</button></p>
 
-    <h1> Drinks Section</h1>
+<p>Pani Popo - $8 <button onclick="addItem('Pani Popo')">Add to Cart</button></p>
 
-    <p>Otai - $17 <button onclick="addItem('Otai')">Add to Cart</button></p>
-    <p>Coconut Water - $10 <button onclick="addItem('Coconut Water')">Add to Cart</button></p>
-    <p>Chocolate Milkshake - $6 <button onclick="addItem('Chocolate Milkshake')">Add to Cart</button></p>
-    <p>Strawberry Milkshake - $6 <button onclick="addItem('Strawberry Milkshake')">Add to Cart</button></p>
-    <p>Monster - $8 <button onclick="addItem('Monster')">Add to Cart</button></p>
+<p>Palusami - $12 <button onclick="addItem('Palusami')">Add to Cart</button></p>
 
-    <h2>Add Your Own Item</h2>
+<p>Ota Ika - $10 <button onclick="addItem('Ota Ika')">Add to Cart</button></p>
 
-    <input id="itemInput" type="text" placeholder="Enter an item">
-    <button onclick="addItem()">Add Item</button>
+<h1>Drinks Section</h1>
 
-    <br><br>
+<p>Otai - $17 <button onclick="addItem('Otai')">Add to Cart</button></p>
 
-    <button onclick="showList()">Show Order</button>
-    <button onclick="clearOrder()">Clear Order</button>
-    <button onclick="pay()">Pay</button>
+<p>Coconut Water - $10 <button onclick="addItem('Coconut Water')">Add to Cart</button></p>
 
-    <div id="spaceForJavaScriptOutput">
-        Your order will appear here.
-    </div>
+<p>Chocolate Milkshake - $6 <button onclick="addItem('Chocolate Milkshake')">Add to Cart</button></p>
 
-    <script src="script.js"></script>
+<p>Strawberry Milkshake - $6 <button onclick="addItem('Strawberry Milkshake')">Add to Cart</button></p>
+
+<p>Monster - $8 <button onclick="addItem('Monster')">Add to Cart</button></p>
+
+<h2>Add Your Own Item</h2>
+
+<input type="text" id="itemInput" placeholder="Enter an item">
+<button onclick="addItem()">Add Item</button>
+
+<br><br>
+
+<button onclick="showList()">Show Order</button>
+<button onclick="clearOrder()">Clear Order</button>
+<button onclick="pay()">Pay</button>
+
+<h2>Your Order</h2>
+
+<div id="spaceForJavaScriptOutput">
+No items added yet.
+</div>
+
+<script src="script.js"></script>
 
 </body>
-</html>
