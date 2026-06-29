@@ -20,7 +20,6 @@ function displayMenu() {
         "1. Sapasui\n" +
         "2. Pani Popo\n" +
         "3. Palusami\n" +
-        "4. Ota Ika"
     );
 }
 
