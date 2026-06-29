@@ -12,7 +12,6 @@ var userName = prompt("What is your name?")
 prompt(" what do you want for today? " + userName + "")
 
 
-var userName = prompt("What is your name?")
 
 
 
