@@ -9,7 +9,7 @@
 var userName = prompt("Pick your things here", "")
 var userName = prompt("What is your name?")
 
-prompt(" what do you want for today? " + userName + " wants! ")
+prompt(" what do you want for today? " + userName + "")
 
 
 var userName = prompt("What is your name?")
