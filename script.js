@@ -22,6 +22,7 @@ function displayMenu() {
         "3. Palusami\n" +
         "4. Ota Ika"
     );
+        alert("Thank you, " + userName + "! You ordered: " + pick + ".");
 }
 
 
