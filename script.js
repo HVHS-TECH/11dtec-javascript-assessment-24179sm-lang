@@ -7,11 +7,12 @@
 
 
 var userName = prompt("Pick your things here", "")
+var userName = prompt("What is your name?")
 
 prompt(" You want this " + userName + " Buy it now! ")
 
 
-
+var userName = prompt("What is your name?")
 
 
 
