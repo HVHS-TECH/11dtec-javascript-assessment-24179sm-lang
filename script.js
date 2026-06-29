@@ -1,9 +1,8 @@
-
 /**************************************
  MAIN CODE
 **************************************/
 
-alert("Welcome Unknown to my program!");
+alert("Welcome to my program!");
 
 var userName = prompt("What is your name?");
 
@@ -14,7 +13,8 @@ displayMenu();
 **************************************/
 
 function displayMenu() {
-    prompt(
+
+    var pick = prompt(
         "Hello " + userName + "!\n\n" +
         "What do you want today?\n\n" +
         "1. Sapasui\n" +
@@ -22,9 +22,23 @@ function displayMenu() {
         "3. Palusami\n" +
         "4. Ota Ika"
     );
-        alert("Thank you, " + userName + "! You ordered: " + pick + ".");
-}
 
+    if (pick == "1") {
+        alert("Thank you, " + userName + "! You ordered Sapasui.");
+    }
+    else if (pick == "2") {
+        alert("Thank you, " + userName + "! You ordered Pani Popo.");
+    }
+    else if (pick == "3") {
+        alert("Thank you, " + userName + "! You ordered Palusami.");
+    }
+    else if (pick == "4") {
+        alert("Thank you, " + userName + "! You ordered Ota Ika.");
+    }
+    else {
+        alert("Sorry, that is not a valid choice.");
+    }
+}
 
 
 
