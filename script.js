@@ -1,16 +1,28 @@
 
 /**************************************
  MAIN CODE
- **************************************/
+**************************************/
 
-    alert("Welcome Unknown to my program!")
+alert("Welcome Unknown to my program!");
 
+var userName = prompt("What is your name?");
 
-var userName = prompt("Pick your things here", "")
-var userName = prompt("What is your name?")
+displayMenu();
 
-prompt(" what do you want for today? " + userName + "")
+/**************************************
+ FUNCTIONS
+**************************************/
 
+function displayMenu() {
+    prompt(
+        "Hello " + userName + "!\n\n" +
+        "What do you want today?\n\n" +
+        "1. Sapasui\n" +
+        "2. Pani Popo\n" +
+        "3. Palusami\n" +
+        "4. Ota Ika"
+    );
+}
 
 
 
