@@ -40,7 +40,7 @@ function displayMenu() {
     }
 
 
- alert("your total is $10 ")
+
 }
 
 
