@@ -38,6 +38,9 @@ function displayMenu() {
     else {
         alert("Sorry, that is not a valid choice.");
     }
+
+
+ alert("Your Total is")
 }
 
 
