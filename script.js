@@ -27,20 +27,20 @@ function displayMenu() {
         alert("Thank you, " + userName + "! You ordered Sapasui this cost $10.");
     }
     else if (pick == "2") {
-        alert("Thank you, " + userName + "! You ordered Pani Popo this cost $8.");
+        alert("Thank you, " + userName + "! You ordered Pani Popo this cost $10.");
     }
     else if (pick == "3") {
-        alert("Thank you, " + userName + "! You ordered Palusami this cost $12.");
+        alert("Thank you, " + userName + "! You ordered Palusami this cost $10.");
     }
     else if (pick == "4") {
-        alert("Thank you, " + userName + "! You ordered Ota Ika this cost $15.");
+        alert("Thank you, " + userName + "! You ordered Ota Ika this cost $10.");
     }
     else {
         alert("Sorry, that is not a valid choice.");
     }
 
 
- alert("")
+ alert("your total is $10 ")
 }
 
 
