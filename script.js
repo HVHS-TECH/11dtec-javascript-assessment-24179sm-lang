@@ -24,7 +24,7 @@ function displayMenu() {
     );
 
     if (pick == "1") {
-        alert("Thank you, " + userName + "! You ordered Sapasui.");
+        alert("Thank you, " + userName + "! You ordered Sapasui this cost $10.");
     }
     else if (pick == "2") {
         alert("Thank you, " + userName + "! You ordered Pani Popo.");
@@ -33,7 +33,7 @@ function displayMenu() {
         alert("Thank you, " + userName + "! You ordered Palusami.");
     }
     else if (pick == "4") {
-        alert("Thank you, " + userName + "! You ordered Ota Ika.");
+        alert("Thank you, " + userName + "! You ordered Ota Ika ");
     }
     else {
         alert("Sorry, that is not a valid choice.");
