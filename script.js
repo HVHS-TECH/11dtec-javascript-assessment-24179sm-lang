@@ -40,6 +40,9 @@ function displayMenu() {
     else {
         alert("Sorry, that is not a valid choice.");
     }
+
+
+    
  alert("you have $50 dollars!");
 
  alert("now you have $40 dollars!");
