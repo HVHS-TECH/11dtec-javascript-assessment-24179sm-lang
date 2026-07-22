@@ -21,6 +21,7 @@ function displayMenu() {
         "2. Pani Popo\n" +
         "3. Palusami\n" +
         "4. Ota Ika"
+    
     );
 
     if (pick == "1") {
@@ -35,12 +36,13 @@ function displayMenu() {
     else if (pick == "4") {
         alert("Thank you, " + userName + "! You ordered Ota Ika this cost $10.");
     }
+ 
     else {
         alert("Sorry, that is not a valid choice.");
     }
 
 
-
+ 
 }
 
 
