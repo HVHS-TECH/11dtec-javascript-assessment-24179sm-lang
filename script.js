@@ -47,12 +47,12 @@ function displayMenu() {
 
  alert("now you have $40 dollars!");
 
+Function displayReceipt() { alert( "===== Tongan Goods =====\n\n" + "Customer: " + userName + "\n" + "Age: " + userAge + "\n" + "Money: $" + userMoney + "\n" + "Order: " + receipt + "\n\n" + "Thank you for buying from Daily Grid Cafe!" ); } 
 
 
 
 
 
- 
 }
 
 
