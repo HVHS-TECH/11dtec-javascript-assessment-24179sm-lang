@@ -41,12 +41,11 @@ function displayMenu() {
         alert("Sorry, that is not a valid choice.");
     }
 
-var userName = prompt("how much monion do you have?");
+var userName = prompt("how much money do you have?");
 
 var userName = prompt("you've gave me $50 ?");
- 
+
 var userName = prompt("now you have $40 dollars?");
-}
 
 
 
