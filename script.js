@@ -45,6 +45,7 @@ var userName = prompt("how much monion do you have?");
 
 var userName = prompt("you've gave me $50 ?");
  
+var userName = prompt("now you have $40 dollars?");
 }
 
 
