@@ -41,6 +41,9 @@ function displayMenu() {
         alert("Sorry, that is not a valid choice.");
     }
 
+var userName = prompt("how much monion do you have?");
+
+
  
 }
 
