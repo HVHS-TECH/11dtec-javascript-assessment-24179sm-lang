@@ -41,12 +41,28 @@ function displayMenu() {
     }
 
 
+var userName = prompt("How much monion do you have?");
 
- alert("How much money do you have?");
-
-
- 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
