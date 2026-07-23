@@ -21,9 +21,7 @@ function displayMenu() {
         "2. Pani Popo\n" +
         "3. Palusami\n" +
         "4. Ota Ika"
-    
-
-    );
+ );
 
     if (pick == "1") {
         alert("Thank you, " + userName + "! You ordered Sapasui this cost $10.");
@@ -48,22 +46,6 @@ function displayMenu() {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
