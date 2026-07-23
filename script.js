@@ -59,66 +59,69 @@ function displayMenu() {
 
 console.log("Hello Welcome To Tongan Goods!");
 
-let OUTPUT;
-let shoppingList = [];
-let total = 0;
+    let OUTPUT;
+    let shoppingList = [];
+    let total = 0;
 
-function addItem(item, price) {
-    shoppingList.push(item);
-    total = total + price;
+    function addItem(item, price) {
+        shoppingList.push(item);
+        total += Number(price);
+        OUTPUT.innerHTML += item + " added to your order.<br>";
 
-    OUTPUT.innerHTML += item + " added to your order.<br>";
-}
+    }
 
-function showList() {
-    OUTPUT.innerHTML = "<b>Your Order:</b><br>";
+    function showList() {
+        OUTPUT.innerHTML = "<b>Your Order:</b><br>";
 
-    if (shoppingList.length === 0) {
-        OUTPUT.innerHTML += "No items ordered yet.";
-    } else {
-        for (let i = 0; i < shoppingList.length; i++) {
-            OUTPUT.innerHTML += shoppingList[i] + "<br>";
+        if (shoppingList.length === 0) {
+            OUTPUT.innerHTML += "No items ordered yet.";
+        } else {
+            for (let i = 0; i < shoppingList.length; i++) {
+                OUTPUT.innerHTML += shoppingList[i] + "<br>";
+            }
+            OUTPUT.innerHTML += "<br><b>Total: $" + total.toFixed(2) + "</b>";
+        }
+    }
+
+    function clearOrder() {
+
+        shoppingList = [];
+        total = 0;
+        OUTPUT.innerHTML = "Your order has been cleared.";
+    }
+
+    function pay() {
+        if (shoppingList.length === 0) {
+            OUTPUT.innerHTML = "Your order is empty.";
+            return;
         }
 
-        OUTPUT.innerHTML += "<br><b>Total: $" + total + "</b>";
+        let money = parseFloat(prompt("How much money do you have?"));
+
+        if (isNaN(money)) {
+            OUTPUT.innerHTML = "Please enter a valid amount of money.";
+            return;
+        }
+
+        if (money >= total) {
+            let change = money - total;
+
+            OUTPUT.innerHTML +=
+                "<br><br> Payment accepted!" +
+                "<br>Your change is $" + change.toFixed(2) +
+                "<br>Thank you for your order at Tongan Goods!";
+        } else {
+            let needed = total - money;
+
+            OUTPUT.innerHTML +=
+                "<br><br> Payment declined." +
+                "<br>You need $" + needed.toFixed(2) + " more.";
+        }
     }
-}
 
-function clearOrder() {
-    shoppingList = [];
-    total = 0;
-    OUTPUT.innerHTML = "Your order has been cleared.";
-}
-
-function pay() {
-    if (shoppingList.length === 0) {
-        OUTPUT.innerHTML = "Your order is empty.";
-        return;
+    function start() {
+        OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+        OUTPUT.innerHTML = "Welcome to Tongan Goods!";
     }
 
-    let money = Number(prompt("How much money do you have?"));
-
-    if (money >= total) {
-        let change = money - total;
-
-        OUTPUT.innerHTML +=
-            "<br><br>Payment accepted!<br>" +
-            "Your change is $" + change +
-            "<br>Thank you for visiting Tongan Goods!";
-    } else {
-        let needed = total - money;
-
-        OUTPUT.innerHTML +=
-            "<br><br>Payment declined.<br>" +
-            "You need $" + needed + " more.";
-    }
-}
-
-function start() {
-    OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    OUTPUT.innerHTML = "Welcome to Tongan Goods!";
-}
-
-
-
-
+    window.onload = start;
