@@ -42,8 +42,9 @@ function displayMenu() {
 
 
 
- alert("now you have $40 dollars!");
+ alert("How much money do you have?");
 
+ alert("");
 
 }
 
