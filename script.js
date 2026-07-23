@@ -44,8 +44,8 @@ function displayMenu() {
 
  alert("How much money do you have?");
 
- alert("");
 
+ 
 }
 
 
