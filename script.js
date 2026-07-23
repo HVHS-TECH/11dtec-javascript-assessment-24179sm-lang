@@ -6,6 +6,8 @@ alert("Welcome to my program!");
 
 var userName = prompt("What is your name?");
 
+
+
 displayMenu();
 
 /**************************************
